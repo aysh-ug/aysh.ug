@@ -24,8 +24,20 @@
 
 
 </head>
-<body style="padding: 0;
+<body id="wholebody" style="padding: 0;
 margin: 0;">
+  
+  <script>
+  $(document).ready(function(){
+    $(window).resize();
+});
+$(window).resize(function{
+    // your code
+    var windowWidth=$(window).width();
+    var mainContainerWidth=windowWidth-100; // For example
+    $("#wholebody").css({"width":mainContainerWidth+"px"});
+});
+  </script>
 
 <h1 style="color: #ffe699; font-size: 40px; font-family: Trebuchet MS, Arial;"><img src="images/aysh.png" alt="aysh.ug" /> Aysh</h1> 
 <!-- Beginning of compulsory code below -->
